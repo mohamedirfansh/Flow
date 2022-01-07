@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Flow",
+  "version": "0.1.0",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["script.js"],
+      "css": ["style.css"]
+    }
+  ]
+}
