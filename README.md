@@ -8,10 +8,6 @@
   Make learning from YouTube faster & easier ⚡️
 </p>
 
-<p align="center">
-  <img alt="Flow Logo" src="images/DevpostLogo.png" width="600" />
-</p>
-
 ## 📖 Overview
 
 We're always watching YouTube videos to supplement our learning. We can very often find high quality educational content. The only problem - Our time!
@@ -22,10 +18,14 @@ This is where Flow comes in! Flow is your handy chrome extension to speed up & s
 
 ![](images/demo1.png)
 
+### Transcribe
+
 Clicking on the `Transcribe` button will produce a full transcript of the video. You can then search for an important pointer from this transcription.
 
 ![](images/demo2.png)
 ![](images/demo3.png)
+
+### Summarize
 
 Clicking on the `Summarize` button will produce a shorter textual version of what was said in the video. Before a quiz/test, this is what you want to be reading! Parts indicated with `[...]` are parts where the algorithm thinks is redundant and thus omitted. You can still view the content by visiting these parts in the full transcript.
 
