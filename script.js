@@ -14,7 +14,7 @@ buttonContainer.appendChild(summarizeBox);
 const videoContainer = document.getElementById('movie_player');
 videoContainer.appendChild(buttonContainer);
 
-const summaryLength = 30;
+const summaryLength = 75;
 
 let originalVideoTranscript;
 let summarizedVideoTranscript;
@@ -77,10 +77,6 @@ function summarizeClick() {
   setTimeout(getTranscription, 3000);
 
   setTimeout(() => {
-    // To get word count
-    // const wordCount = originalVideoTranscript.match(/(\w+)/g).length;
-    // console.log(wordCount);
-
     // To send the transcript to api and get the summary back
     const formdata = new FormData();
     formdata.append('key', 'd76c505c550fa212dc1a275000ead81b');
