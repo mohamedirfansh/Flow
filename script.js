@@ -1,3 +1,5 @@
+const API_KEY = 'YOUR_API_KEY';
+
 const transcriptBox = document.createElement('button');
 transcriptBox.innerHTML = 'transcribe';
 transcriptBox.className = 'transcribeBox';
@@ -37,6 +39,9 @@ function getTranscription() {
   let transcript = [];
   for (let i = 0; i < transcriptDivs.length; i++) {
     transcript.push(transcriptDivs[i].innerHTML.trim());
+  }
+  for (let j = 10; j < transcript.length; j += 10) {
+    transcript.splice(j, 0, '<br><br>');
   }
   originalVideoTranscript = transcript.join('. ');
 }
@@ -79,7 +84,7 @@ function summarizeClick() {
   setTimeout(() => {
     // To send the transcript to api and get the summary back
     const formdata = new FormData();
-    formdata.append('key', 'd76c505c550fa212dc1a275000ead81b');
+    formdata.append('key', API_KEY);
     formdata.append('txt', originalVideoTranscript);
     formdata.append('sentences', summaryLength);
 

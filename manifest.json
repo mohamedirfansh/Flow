@@ -1,6 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Flow",
+  "name": "Flow - YouTube transcriber & summarizer",
+  "description": "Make learning from YouTube faster & easier.",
   "version": "0.1.0",
   "action": {
     "default_popup": "popup.html"

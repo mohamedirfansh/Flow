@@ -41,11 +41,12 @@ This summary is returned and is shown to the client in a new window for them to 
 
 > The TextTeaser & TextRank algorithms calculate the scores based on the relative position of the sentence in the text, titles and section headers, presence of words in italics and bold, numbers, and/or some special keywords/phrases.
 
-## 🚀 Getting Started
+## 🚀 Getting Started - Local Development
 
 ### 📋 Prerequisites
 
-All you need is the chrome web browser!
+- Chrome web browser
+- Your own API key from [Meaning Cloud](https://learn.meaningcloud.com/developer/summarization/1.0/doc/what-is-summarization)
 
 ### ⚡️ Installing 🔧
 
@@ -55,7 +56,9 @@ Download the project using either:
 git clone https://github.com/mohamedirfansh/Flow.git
 ```
 
-Or clicking this [link](https://github.com/mohamedirfansh/Flow/archive/refs/heads/master.zip)
+Or by clicking this [link](https://github.com/mohamedirfansh/Flow/archive/refs/heads/master.zip).
+
+Then, open `script.js` in your favourite editor and replace line 1 with the API Key you got from [Meaning Cloud](https://learn.meaningcloud.com/developer/summarization/1.0/doc/what-is-summarization).
 
 Go to `chrome://extensions/` in your browser and enable "Developer mode". Then, click "Load unpacked" and open the folder of this project. Enable the extension and head over to [YouTube](https://www.youtube.com/) to summarize your video!
 
